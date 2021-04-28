@@ -1,0 +1,16 @@
+@mixin estiloTitulos($colorLetra , $size){
+    font-family: 'Lucida', serif;
+    font-size: $size; 
+    color: $colorLetra;
+    text-transform: uppercase;
+    
+}
+
+@mixin estiloSubTitulos($colorLetra , $size){
+
+    font-family: 'Lucida', serif;
+    font-size: $size; 
+    color: $colorLetra;
+    
+}
+

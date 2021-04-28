@@ -1,0 +1,52 @@
+@import "mixin";
+.header{
+  padding: 0;
+  margin: 0;
+  
+  &__promo{
+    display: block;
+    position: relative;
+    width: 100%;
+    top: 0;
+    margin: 0;
+    height: 25px;
+    text-align: center;  
+    background: #2f2f2f
+  }
+  
+  &__info{
+   color: white;
+   font-size: 11px;
+   line-height: 2em;
+   width: 100%;
+  }
+}  
+nav {  
+  background: white;
+  padding: 5px 20px ;
+  font-family:'Lucida', serif;
+ 
+  ul { 
+    list-style-type: none; 
+    li { font-size: 16px; padding: 15px 5px; white-space: nowrap; 
+      a { color: black; text-decoration: none;text-transform: uppercase; font-weight: 700;
+        &:hover { text-decoration: underline; }
+      }
+     }  
+    .logo{
+      a{font-weight: bold;letter-spacing: 0.5em; font-size: 1.5em;
+          &:hover { text-decoration: none; } 
+        }
+    }
+     
+    .toggle a { font-size: 1.5em; } 
+    .button.secondary { border-bottom: 1px #444 solid; }
+    
+  
+  } 
+  /* Mobile menu */ .menu { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; } .toggle { order: 1; } .item.button { order: 2; } .item { width: 100%; text-align: center; order: 3; display: none; } .item.active { display: block; }
+  /* Tablet menu */ @media all and (min-width: 600px) { .menu { justify-content: center; } .logo { flex: 1; } .toggle { flex: 1; text-align: right; } .item.button { width: auto; order: 1; display: block; } .toggle { order: 2; } .button.secondary { border: 0; } .button a { padding: 7.5px 15px; background: transparent; } .button.secondary a { background: transparent; } .button a:hover { text-decoration: none; } .button:not(.secondary) a:hover { color: #ddd; } .button.secondary a:hover { color: #ddd; } }
+  /* Desktop menu */ @media all and (min-width: 900px) { .item { display: block; width: auto; } .toggle { display: none; } .logo { order: 0; } .item { order: 1; } .button { order: 2; } .menu li { padding: 15px 10px; } .menu li.button { padding-right: 0; } }
+
+
+} 

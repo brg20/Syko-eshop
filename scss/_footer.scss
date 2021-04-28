@@ -1,0 +1,70 @@
+@import "mixin";
+
+/*footer*/
+.footer{
+    display: inline-block;
+    width: 100%;
+    background-color: #202020;
+    margin-top: 70px;
+  
+    &__contenido{
+      display: table;
+      width: 100%;
+      max-width: 1350px;
+      padding: 40px 0;
+      margin: auto;
+    }
+
+    &__columna1{
+      @include estiloTitulos (#fff, 42px);
+      float: left;
+      line-height: 42px;
+    }
+    &__columna2{
+
+      display: block;
+      float: left;
+      width: 340px;
+      color: #FFF;
+      margin: 10px 0 0 90px;
+    }
+    &__columna2 {
+      input[type=email]{
+        display: block;
+        width: 223px;
+        height: 45px;
+        border: 0;
+        float: left;
+        font-weight: 700;
+        margin-top: 10px;
+       padding: 0 6px;
+      }
+      form {
+        display: block;
+        margin-top: 0em;
+      }
+      input[type=button] {
+       display: block;
+       width: 100px;
+       height: 45px;
+       border: 0;
+       float: right;
+       background-color: #6e6e6e;
+       color: #FFF;
+       font-weight: 700;
+       margin-top: 10px;
+       cursor: pointer;
+       }
+    }
+      
+    &__columna3{
+      display: block;
+      float: left;
+      margin-left: 80px;
+      color: #FFF;
+    }
+    
+    
+    
+  }
+  

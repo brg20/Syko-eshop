@@ -1,0 +1,97 @@
+@import "header";
+@import "footer";
+@import "index";
+@import "tienda";
+@import "contacto";
+@import "galeria";
+@import "animaciones";
+@import "mixin";
+
+
+* { box-sizing: border-box; padding: 0; margin: 0; }
+
+body{ margin: 0;}
+
+/*index*/
+.mainProduct{
+  display: inline-block;
+  width: 100%;
+  margin-top: 5px;
+  padding: 20px;
+
+  &__contenido{
+   display: block;
+   width: 100%;
+   max-width: 1280px;
+   margin: auto
+  }
+
+  &__modulo{
+    display: inline-block;
+    width: 100%;
+    margin: 40px auto 0 auto;
+  }
+  &__titulo{
+    text-align: center;
+    font-family: 'Lucida', serif;
+    font-size: 60px;
+    text-transform: uppercase;
+    color: #2f2f2f;
+    margin-top: -4px;
+  }
+  &__banner1{
+    display: block;
+    float: left;
+    width: calc(25% - 11.5px);
+    height: auto;
+    margin-left: 0;
+  }
+  &__banner2{
+    @extend .mainProduct__banner1;
+    margin-left: 15px;
+  }
+  &__banner3{
+    @extend .mainProduct__banner2;
+    
+  }
+  &__banner4{
+    @extend .mainProduct__banner2;
+    
+  }
+   
+  &__img{
+    top: 50%;
+   left: 50%;
+   cursor: pointer;
+   width: 80%;
+   transition: all 2s;
+  }
+  &__img--animation:hover{
+    height: auto;
+    width: 100%;
+  }
+}
+
+.rowVideo{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2em;
+  padding: 60px;
+  margin:auto;
+  max-width: 1170px;
+  
+  &__video{
+    padding-bottom: 53.25%;
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+  &__iframe{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+

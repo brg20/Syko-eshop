@@ -1,0 +1,162 @@
+
+@media only screen and (max-width: 480px){
+
+  .video iframe{
+   height:220px ;
+   width: 480px;
+  }
+
+  .modulo1 .titulo{
+    font-size: 40px;
+  }
+  .section_title_container .section_title{
+    font-size: 40px;
+  }
+ 
+  
+}
+
+@media screen and (max-width: 768px){
+  footer {margin-top: 20px;}
+	.footer__contenido {height: auto; padding: 0 18px 20px 0;}
+	.footer__contenido .footer__columna1 {display: none; float: none; margin: 50px auto 0 auto; font-size: 36px; line-height: 36px;}
+	.footer__contenido .footer__columna2{display: none; position: relative; width: 100%; left: 0; top: 0; float: none; margin: 60px auto 0 auto;}
+	.footer__columna2 input[type="email"]{width: calc(100% - 110px);}
+	.footer__columna2 .mail {display: none;}
+	.footer__contenido .footer__columna3{width: 100%; float: none; margin: 20px auto 10px auto; text-align: center; font-size: 14px;}
+	
+	.footer__columna2 input[type="text"] {display: block; float: none;}
+	.footer__columna2 input[type="submit"]{display: block; float: none;}
+  
+
+  #mainProduct {margin-top: 20px;}
+	.mainProduct__contenido {width: calc(100% - 28px);}
+  .mainProduct__modulo {margin: 30px auto 0 auto;}
+	.mainProduct__modulo .banner{float: left; width: calc(50% - 7px);}
+	.mainProduct__modulo .mainProduct__banner1{margin: 0;}
+	.mainProduct__modulo .mainProduct__banner2{margin: 0 0 0 14px;}
+	.mainProduct__modulo .mainProduct__banner3{margin: 14px 0 0 0;}
+	.mainProduct__modulo .mainProduct__banner4{margin: 14px 0 0 14px;}
+
+
+  
+  .tienda {padding: 0 14px;margin: 0 auto;}
+  .tienda .productos{float: none;width: 100%;}
+  .productos .productos__listado{margin: 0;}
+  .productos .productos__modulo{ width: 100%;margin: 0 0 50px 0;}
+
+
+
+ 
+	.contacto__contenido{padding: 0 14px}
+	.contacto__contenido .contacto__division{font-size: 21px!;}
+	.contacto__contenido .contacto__titulos{font-size: 24px; color: #414042; letter-spacing: 2px;}
+	.contacto__contenido .contacto__textos{font-size: 12px; color: #6d6e71; letter-spacing: 2px;}
+	.contacto__contenido .contacto__columna1{float: none; width: 100%; margin-top: 30px;}
+	.contacto__contenido .contacto__columna1 input[type=text]{display: inline-block; width: 100%; height: 35px;margin: 14px 0 0 0;}
+	.contacto__contenido .contacto__columna1 input[type=email]{display: inline-block; width: 100%; height: 35px; margin: 14px 0 0 0;}
+	.contacto__contenido .contacto__columna1 input[type=submit]{display: inline-block; width: 140px; height: 35px; font-size: 12px; margin: 14px 0 0 0; cursor: pointer;}
+	.contacto__contenido .contacto__columna1 textarea{display: inline-block; width: 100%; height: 276px;margin: 14px 0 0 0;}
+	.contacto__contenido .contacto__columna2{float: none; width: 100%; margin: 60px 0 0 0;}
+	.contacto__contenido .contacto__columna2 .contacto__linea{width: 90px; height: 4px;}
+	.contacto__columna2 .contacto__textos{font-size: 15px; line-height: 15px;}
+	.contacto__contenido .mapa{display: inline-block; width: 100%; height: 180px; margin: 40px 0; overflow: hidden;}
+
+}
+
+
+
+/*index*/
+
+.carousel-inner {
+  transition: all 2s ;
+}
+
+
+
+div {
+  display: block;
+  position: relative;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+
+
+/*New In*/
+
+.fas.fa-shopping-cart{
+  font-size: 1.3rem;
+  position: absolute;
+  right: 2rem;
+ 
+}
+
+section{
+  flex-flow: row wrap;
+  justify-content:center ;
+  align-items: flex-start;
+}
+section {
+  height: 100%;
+  width: 100%;
+}
+section {
+  height: 100%;
+  width: 100%;
+}
+.newInTienda{ 
+  background-color:white;
+  padding: 1.8rem 0;
+  margin-top: 2rem;    
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  grid-template-rows: repeat(3,1fr);     
+  row-gap: 30px;   
+}
+
+.newInTienda article{    
+  color: black; 
+  font-size: 1rem;   
+  display: grid;
+  grid-template-columns: auto; 
+  grid-template-rows: auto auto auto auto;
+  align-items: center;  
+  justify-items: center; 
+  grid-gap: 0.5rem;   
+  
+}
+.newInTienda img{   
+  grid-row: 1;   
+  max-width: 100%;
+  width: 100%;
+  height: 100%;
+}
+
+.newInTienda .descripcion {   
+  grid-row: 2;   
+}
+.newInTienda .precio {   
+  grid-row: 3;   
+}
+.newInTienda button{   
+  grid-row: 4;
+  padding: 0.3rem;
+}
+
+.boton{
+  padding: 0.4rem;
+  background-color: white;
+  border-radius: 0.2rem;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 0.80rem;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+.boton:hover{
+  border-color: white;  
+  color: black;  
+  background-color: rgb(167, 105, 64);
+
+}

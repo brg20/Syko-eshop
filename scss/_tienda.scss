@@ -1,0 +1,65 @@
+.tienda{
+    display: block;
+    width: 100%;
+    max-width: 1280px;
+    margin: 30px auto;
+  
+    .productos{
+      display: block;
+      width: calc(100% - 248px);
+      
+      &__listado{
+        display: inline-block;
+        width: 100%;
+        margin-top: 35px;
+  
+      }
+  
+      &__modulo{
+        display: inline-block;
+        width: calc(25% - 20px);
+        margin: 0 0 60px 16px;
+        transition: all 0.2s;
+        vertical-align: top;
+      }
+  
+      &__link{
+        color: #000;
+        text-decoration: none;
+      }
+  
+      &__imagen{
+        display: inline-block;
+        width: 100%;
+        padding-bottom: 158%;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+  
+      &__code{
+        float: right;
+        background-color: rgba(255,255,255,0.5);
+        font-size: 12px;
+        color: #000;
+        padding: 5px 10px;
+      }
+  
+      &__info{
+        display: inline-block;
+        width: 100%;
+        padding: 14px 0 0 0;
+        font-size: 15px;
+        margin: 0;
+        
+      }
+      &__descripcion{
+        margin: 0;
+      }
+      &__categoria{
+        color: #a2a4a7;
+        margin-top: 0;
+        margin-bottom: 0;
+      } 
+    } 
+  }
