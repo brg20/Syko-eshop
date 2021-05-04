@@ -537,6 +537,10 @@ table {
 .cart-info {
   display: flex;
   flex-wrap: wrap; }
+  img {
+      height: 300px;
+      margin-right: 10px; }
+
 
 th {
   text-align: left;
@@ -554,10 +558,7 @@ td {
     td input a {
       color: #be8158;
       font-size: 12px; }
-    td input img {
-      height: 300px;
-      margin-right: 10px; }
-
+   
 .total-price {
   display: flex;
   justify-content: flex-end; }
