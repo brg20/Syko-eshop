@@ -9,6 +9,10 @@
    .cart-info{
      display: flex;
      flex-wrap:wrap;
+       img{
+            height: 300px;
+            margin-right: 10px;
+          }
    }
    th{
      text-align: left;
@@ -27,10 +31,7 @@
             color:#be8158;
             font-size: 12px;
           }
-          img{
-            height: 300px;
-            margin-right: 10px;
-          }
+          
         }
     }
    
