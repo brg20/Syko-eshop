@@ -558,6 +558,9 @@ td {
       height: 300px;
       margin-right: 10px; }
 
+td img {
+      height: 300px;
+      margin-right: 10px; }
 .total-price {
   display: flex;
   justify-content: flex-end; }
