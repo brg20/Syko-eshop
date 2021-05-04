@@ -526,6 +526,50 @@ h1 {
     opacity: 1;
     visibility: visible; } }
 
+/*CARRITO*/
+.cart-page {
+  margin: 80px auto; }
+
+table {
+  width: 100%;
+  border-collapse: collapse; }
+
+.cart-info {
+  display: flex;
+  flex-wrap: wrap; }
+
+th {
+  text-align: left;
+  padding: 5px;
+  color: #fff;
+  background: #be8158;
+  font-weight: normal; }
+
+td {
+  padding: 10px 5px; }
+  td input {
+    width: 40px;
+    height: 30px;
+    padding: 5px; }
+    td input a {
+      color: #be8158;
+      font-size: 12px; }
+    td input img {
+      height: 300px;
+      margin-right: 10px; }
+
+.total-price {
+  display: flex;
+  justify-content: flex-end; }
+  .total-price table {
+    border-top: 3px solid #be8158;
+    width: 100%;
+    max-width: 400px; }
+  .total-price td:last-child {
+    text-align: right; }
+  .total-price th:last-child {
+    text-align: right; }
+
 * {
   box-sizing: border-box;
   padding: 0;

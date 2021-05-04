@@ -65,7 +65,9 @@
 	.contacto__contenido .contacto__columna2 .contacto__linea{width: 90px; height: 4px;}
 	.contacto__columna2 .contacto__textos{font-size: 15px; line-height: 15px;}
 	.contacto__contenido .mapa{display: inline-block; width: 100%; height: 180px; margin: 40px 0; overflow: hidden;}
+  
 
+  
   
 }
 
@@ -174,4 +176,3 @@ h1{
 
 
 /*LOG IN */
-
