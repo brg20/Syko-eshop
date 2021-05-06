@@ -533,13 +533,14 @@ h1 {
 table {
   width: 100%;
   border-collapse: collapse; }
+.cart-info img {
+      height: 300px;
+      margin-right: 10px; }
 
 .cart-info {
   display: flex;
   flex-wrap: wrap; }
-  img {
-      height: 300px;
-      margin-right: 10px; }
+
 
 
 th {
