@@ -10,7 +10,7 @@
     <meta name="keywords" content="Abrigos, camperas, buzos, sweaters, calzas, pantalones, demin, jeans, camisas, faldas, monos, pantalones, remeras, musculosas, tops, shorts, vestidos, accesorios, bijou, bolsos, calzado, cinturones, cintos, esmaltes, gorros, medias, bufandas, guantes, pañuelos, mujer, joven, niñas, nenas, indumentaria, ropa, moda">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">    
     <link href="https://fonts.googleapis.com/css2?family=Abhaya+Libre&family=Cormorant+Garamond:wght@500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">    <title>Contáctenos</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
   </head>
   <body>
     <header class="header"> 
@@ -27,14 +27,97 @@
           <li class="item"><a href="newin.html">newin</a></li> 
           <li class="item"><a href="prendas.html">prendas</a></li> 
           <li class="item"><a href="contacto.html">contacto</a></li> 
-          <li class="item button"><a href="#">Log In</a></li> 
-          <li class="item button secondary"><a href="#">Sign Up</a></li> 
+          <li class="item button"><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Log In</button></li> 
+          <li class="item button secondary"><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModalDos">Sign Up</a></li>  
           <li class="item"><a href="carrito.html"><i style="font-size:24px" class="fa">&#xf07a;</i></a></li> 
           <li class="toggle"><a href="#"><i class="fas fa-bars"></i></a></li> 
         </ul> 
       </nav>
     </header> 
     
+    <!--MODAL LOG IN-->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog form-dark">
+        <div class="modal-content">
+          <div class="text-black rgba-stylish-strong py-5 px-5  ">
+            <div class="modal-header text-center pb-4">
+             <h3 class="modal-title  " id="exampleModalLabel"><span>INGRESAR </span></h3>
+             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+             
+            </div>
+          </div>
+          
+          <div class="modal-body">
+            <div class="container">
+              <div class="row">
+                <div class="md-form mb-5">
+                 <input class="form__input" type="email" placeholder="EMAIL" name="form_contacto_email" required="">
+                 <input class="form__input" type="password"  placeholder="CONTRASEÑA" name="form_contacto_nombre" required="">
+                </div>
+              </div>
+            </div>
+            
+                  
+          </div>
+          <div class="modal-footer">
+            <div class="container">
+              <div class="row d-flex align-items-center mb-4">
+                <div class="text-center mb-3 col-md-12">
+                  <button type="button" class="form__button  " data-bs-dismiss="modal">Aceptar</button>
+                </div>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--FIN LOG IN-->
+
+     <!--MODAL REGISTRARSE-->
+    <div class="modal fade" id="exampleModalDos" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="text-black rgba-stylish-strong py-5 px-5  ">
+            <div class="modal-header text-center pb-4">
+             <h5 class="modal-title  w-100 white-text font-weight-bold" id="exampleModalLabel"><span>REGISTRARSE</span></h5>
+             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+          </div>
+          
+          <div class="modal-body">
+            <div class="container">
+              <div class="row">
+                <div class="md-form mb-5">
+                  <input class="form__input" type="text" placeholder="NOMBRE Y APELLIDO" name="form_contacto_nombre" required="">
+                  <input class="form__input" type="email" placeholder="EMAIL" name="form_contacto_email" required="">
+                
+                  <input class="form__input" type="password"  placeholder="CONTRASEÑA" name="form_contacto_nombre" required="">
+                  <div class="form-group mt-4">
+                    <input class="form-check-input" type="checkbox" id="checkbox">
+                    <label for="checkbox" class="black-text form-check-label">Aceptar términos y condiciones</a></label>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+                  
+          </div>
+          <div class="modal-footer">
+            <div class="container">
+              <div class="row d-flex align-items-center mb-4">
+                <div class="text-center mb-3 col-md-12">
+                  <button type="button" class="form__button  " data-bs-dismiss="modal">Aceptar</button>
+                </div>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+      <!--FIN MODAL REGISTRARSE-->
+
     <div class="container">
         <div class="row">
             <div class="col-12 col-lg-12 cart-page">
@@ -126,10 +209,10 @@
       </div>
     </footer> 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="../Js/index.js"></script>
+    <script src="Js/index.js"></script>
 
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
     
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
   </body>
 </html>

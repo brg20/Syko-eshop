@@ -27,15 +27,102 @@
           <li class="item"><a href="newin.html">newin</a></li> 
           <li class="item"><a href="prendas.html">prendas</a></li> 
           <li class="item"><a href="contacto.html">contacto</a></li> 
-          <li class="item button"><a href="#">Log In</a></li> 
-          <li class="item button secondary"><a href="#">Sign Up</a></li>
+          <li class="item button"><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Log In</button></li> 
+          <li class="item button secondary"><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalDos">Sign Up</a></li> 
 	  <li class="item"><a href="carrito.html"><i style="font-size:24px" class="fa">&#xf07a;</i></a></li> 
           <li class="toggle"><a href="#"><i class="fas fa-bars"></i></a></li> 
         </ul> 
       </nav>
     </header> 
 
-    
+    <!--MODAL LOG IN-->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog ">
+        <div class="modal-content">
+          <div class="text-black rgba-stylish-strong py-5 px-5  ">
+            <div class="modal-header text-center pb-4">
+             <h3 class="modal-title  " id="exampleModalLabel"><span>INGRESAR </span></h3>
+             <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+               
+            </div>
+          </div>
+          
+          <div class="modal-body">
+            <div class="container">
+              <div class="row">
+                <div class="col-12">
+                  <div class="md-form mb-5">
+                   <input class="form__input" type="email" placeholder="EMAIL" name="form_contacto_email" required="">
+                   <input class="form__input" type="password"  placeholder="CONTRASEÑA" name="form_contacto_nombre" required="">
+                  </div>
+                </div>
+                
+              </div>
+            </div>
+            
+                  
+          </div>
+          <div class="modal-footer">
+            <div class="container">
+              <div class="row d-flex align-items-center mb-4">
+                <div class="text-center mb-3 col-md-12">
+                 <button type="button" class="form__button  " data-dismiss="modal">Aceptar</button>
+                </div>
+              </div>
+
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--FIN LOG IN-->
+
+     <!--MODAL REGISTRARSE-->
+    <div class="modal fade" id="exampleModalDos" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="text-black rgba-stylish-strong py-5 px-5  ">
+            <div class="modal-header text-center pb-4">
+             <h5 class="modal-title  w-100 white-text font-weight-bold" id="exampleModalLabel"><span>REGISTRARSE</span></h5>
+             <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            </div>
+          </div>
+          
+          <div class="modal-body">
+            <div class="container">
+              <div class="row">
+                <div class="col-12">
+                  <div class="md-form mb-5">
+                    <input class="form__input" type="text" placeholder="NOMBRE Y APELLIDO" name="form_contacto_nombre" required="">
+                    <input class="form__input" type="email" placeholder="EMAIL" name="form_contacto_email" required="">
+                  
+                    <input class="form__input" type="password"  placeholder="CONTRASEÑA" name="form_contacto_nombre" required="">
+                    <div class="form-group mt-4">
+                      <input class="form-check-input" type="checkbox" id="checkbox">
+                      <label for="checkbox" class="black-text form-check-label">Aceptar términos y condiciones</a></label>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+                  
+          </div>
+          <div class="modal-footer">
+            <div class="container">
+              <div class="row d-flex align-items-center mb-4">
+                <div class="text-center mb-3 col-md-12">
+                 <button type="button" class="form__button  " data-dismiss="modal">Aceptar</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+      <!--FIN MODAL REGISTRARSE-->
+
 
     <div class="contacto">
       <div class="contacto__contenido">
